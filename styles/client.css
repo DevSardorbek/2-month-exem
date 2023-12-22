@@ -7,6 +7,7 @@
 
 .client_sections {
   background: #fafafa;
+  padding-bottom: 85px;
 }
 .client_section {
   display: -webkit-box;
@@ -145,7 +146,23 @@ input.latest_input::placeholder {
   letter-spacing: 0.2px;
   padding: 16px 22px;
 }
+.mobile {
+  display: none;
+}
 @media (max-width: 480px) {
+  .mobile {
+    display: block;
+  }
+  .web {
+    display: none;
+  }
+  .client_section {
+    width: 100%;
+    padding: 0;
+  }
+  .client_sections {
+    padding-bottom: 0;
+  }
   .client_section_brands {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -175,8 +192,17 @@ input.latest_input::placeholder {
     -ms-flex-item-align: stretch;
     -ms-grid-row-align: stretch;
     align-self: stretch;
+    padding: 30px 0;
+  }
+  .client_section_latest .latest_left {
+    width: 100%;
   }
   .latest_left h3 {
-    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .latest_right {
+    width: 100%;
   }
 }

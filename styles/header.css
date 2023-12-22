@@ -225,8 +225,8 @@ header {
   display: none;
 }
 @media (max-width: 480px) {
-  .container {
-    width: 450px;
+  header {
+    position: absolute;
   }
   .main {
     width: 416px;
@@ -294,13 +294,8 @@ header {
   .main_section_info h1 {
     color: var(--text-color, #252b42);
     text-align: center;
-    width: 335px;
-    font-family: Montserrat;
     font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 57px; /* 142.5% */
-    letter-spacing: 0.2px;
+    line-height: 57px;
   }
   .main_section_info p {
     color: var(--second-text-color, #737373);
@@ -337,12 +332,7 @@ header {
     align-items: center;
     gap: 25px;
   }
-  .btn_one,
-  .btn_two {
-    width: 185px;
-    height: 48px;
-    margin: 0 auto;
-  }
+
   .card_item {
     display: -webkit-box;
     display: -ms-flexbox;
